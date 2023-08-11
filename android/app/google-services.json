@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "159655471246",
+    "project_id": "pdf-reader-4b0d9",
+    "storage_bucket": "pdf-reader-4b0d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159655471246:android:9296faf1633282d8bb41df",
+        "android_client_info": {
+          "package_name": "com.example.pdf_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159655471246-20tqm46bgsg76790q7gdvng4dhg7jseq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsT2n5w0V13E-I2SNdUrSutXJMqmdMhc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159655471246-20tqm46bgsg76790q7gdvng4dhg7jseq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

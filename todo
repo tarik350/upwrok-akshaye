@@ -1,0 +1,4 @@
+1. add getx as state management
+2. take user name from add user page and create a user on home page
+and use getx to achive this things
+
