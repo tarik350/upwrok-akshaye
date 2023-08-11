@@ -27,6 +27,7 @@ class AuthMethods {
           phonenumber.isNotEmpty) {
         UserCredential credential = await _auth.createUserWithEmailAndPassword(
             email: email, password: password);
+        //otp here
         print('user created');
 
         String photoUrl =
@@ -63,6 +64,8 @@ class AuthMethods {
       if (email.isNotEmpty || password.isNotEmpty) {
         UserCredential user = await _auth.signInWithEmailAndPassword(
             email: email, password: password);
+        //send an otp for two factor authentication
+
         res = 'success';
       } else {
         res = 'please enter all the fields';

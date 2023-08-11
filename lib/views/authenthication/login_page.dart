@@ -238,9 +238,11 @@ class _LoginPageState extends State<LoginPage> {
           style: TextStyle(color: Colors.black),
           textAlign: TextAlign.left,
         ),
-        onPressed: () {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => const reset_password()));
+        onPressed: () async {
+          final prefs = await SharedPreferences.getInstance();
+          prefs.setBool('showHome', false);
+          // Navigator.push(context,
+          //     MaterialPageRoute(builder: (context) => const reset_password()));
         },
       ),
     );

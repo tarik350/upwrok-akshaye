@@ -7,6 +7,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:pdf_app/views/authenthication/login_page.dart';
 import 'package:pdf_app/styles.dart' as style;
 import 'package:pdf_app/views/home.dart';
+import 'package:pdf_app/views/pdf_viewer_app.dart';
 import '../../resources/image_tools.dart';
 
 class SignUp extends StatefulWidget {
@@ -217,6 +218,7 @@ class _signupState extends State<SignUp> {
                   address: addressController.text,
                   file: _image!);
               print('returned');
+              print(res);
               setState(() {
                 showProgress = false;
               });
@@ -225,7 +227,8 @@ class _signupState extends State<SignUp> {
 
                 Navigator.pushAndRemoveUntil(
                     (context),
-                    MaterialPageRoute(builder: (context) => const Home()),
+                    MaterialPageRoute(
+                        builder: (context) => const PdfViewerApp()),
                     (router) => false);
               } else {
                 Fluttertoast.showToast(msg: res);

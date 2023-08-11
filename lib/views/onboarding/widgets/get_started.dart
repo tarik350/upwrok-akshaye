@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pdf_app/views/authenthication/login_page.dart';
 import 'package:pdf_app/views/pdf_viewer_app.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -22,7 +23,7 @@ class GetStarted extends StatelessWidget {
                 //we will look into this warning
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (context) {
-                  return PdfViewerApp();
+                  return LoginPage();
                 }));
               },
               child: const Padding(
